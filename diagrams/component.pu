@@ -1,0 +1,22 @@
+@startuml
+component Main {
+    Main : handleTweetSubmit()
+    Main : tweetData
+}
+
+component TextArea {
+    TextArea : onSubmit()
+}
+
+component Simple {
+    Simple : render()
+}
+
+component Detail {
+    Detail : render()
+}
+
+TextArea --> Main : Submit Tweet Data
+Main --> Simple : Pass Data for Simple Preview
+Main --> Detail : Pass Data for Detailed Preview
+@enduml

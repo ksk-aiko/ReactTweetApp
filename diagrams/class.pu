@@ -1,0 +1,23 @@
+@startuml
+class Main {
+  +state: tweetData
+  +handleTweetSubmit(data)
+}
+
+class TextArea {
+  +onSubmit: func
+  +render()
+}
+
+class Simple {
+  +render()
+}
+
+class Detail {
+  +render()
+}
+
+Main o-- TextArea
+Main o-- Simple
+Main o-- Detail
+@enduml

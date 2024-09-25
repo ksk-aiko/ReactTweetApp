@@ -1,0 +1,6 @@
+@startuml usecase
+actor User
+User --> (Submit Tweet)
+User --> (View Simple Preview)
+User --> (View Detailed Preview)
+@enduml

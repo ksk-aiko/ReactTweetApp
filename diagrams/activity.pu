@@ -1,0 +1,16 @@
+@startuml
+|User|
+start
+:入力を開始;
+:ユーザー名、ID、ツイート内容を入力;
+:送信ボタンをクリック;
+
+|Main|
+if (データが有効か?) then (Yes)
+  :データを保存;
+  :プレビューを表示;
+else (No)
+  :エラーメッセージを表示;
+endif
+stop
+@enduml
