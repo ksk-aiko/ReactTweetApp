@@ -1,0 +1,25 @@
+.main-container {
+  background-color: #e6ecf0;
+  border: 1px solid #ccd6dd;
+  border-radius: 8px;
+  padding: 16px;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.main-title {
+  font-size: 24px;
+  color: #1da1f2;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.data-input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccd6dd;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
