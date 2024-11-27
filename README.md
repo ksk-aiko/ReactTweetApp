@@ -66,6 +66,7 @@ ReactTweetAppは、ツイートの投稿とプレビューを行うシンプル�
 ## ライセンス
 このプロジェクトはMITライセンスの下でライセンスされています。
 
+## クラス図
 ```mermaid
 classDiagram
     class Main {
@@ -89,3 +90,21 @@ classDiagram
     Main o-- TextArea
     Main o-- Simple
     Main o-- Detail
+
+## シーケンス図
+```mermaid
+sequenceDiagram
+    participant User
+    participant TextArea
+    participant Main
+    participant Simple
+    participant Detail
+
+    User->>TextArea: 入力データを送信
+    TextArea->>TextArea: データ検証
+    TextArea->>Main: リフトアップ（データ送信）
+    Main->>Main: データを状態に保存
+    Main->>Simple: シンプルプレビュー表示データを渡す
+    Simple->>Simple: プレビューをレンダリング
+    Main->>Detail: 詳細プレビュー表示データを渡す
+    Detail->>Detail: プレビューをレンダリング
