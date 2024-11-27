@@ -65,3 +65,29 @@ ReactTweetAppは、ツイートの投稿とプレビューを行うシンプル�
 
 ## ライセンス
 このプロジェクトはMITライセンスの下でライセンスされています。
+
+```
+mermaid
+
+classDiagram
+    class Main {
+        +tweetData state
+        +handleTweetSubmit(data)
+    }
+    
+    class TextArea {
+        +func onSubmit
+        +render()
+    }
+    
+    class Simple {
+        +render()
+    }
+    
+    class Detail {
+        +render()
+    }
+    
+    Main o-- TextArea
+    Main o-- Simple
+    Main o-- Detail
