@@ -90,6 +90,7 @@ classDiagram
     Main o-- TextArea
     Main o-- Simple
     Main o-- Detail
+```
 
 ## シーケンス図
 ```mermaid
